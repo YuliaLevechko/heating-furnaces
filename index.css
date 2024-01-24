@@ -46,8 +46,7 @@ body {
 .block-1-hero {
     background: linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 79%)), url(https://images.prom.ua/4791214081_opalyuvalna-pich-rud.jpg);
     background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
+    background-size: auto;
 }
 .block-1-title {
     color: #0d2d16;
