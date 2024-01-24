@@ -253,53 +253,7 @@ body {
 .block-4-title {
     text-align: center;
 }
-/* .faq-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
-.faq-item {
-    text-align: center;
-}
-
-.faq-question {
-    padding: 10px;
-    background-color: #0d2d16;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px #00000052;
-    transition: all .5s ease-in-out;
-}
-.faq-question:hover, .faq-question:focus, .faq-question:active {
-    color: #fede08;
-    transform: scaleY(1.1);
-}
-.faq-question:hover span,
-.faq-question:focus span, .faq-question:active span {
-    color: #fede08;
-}
-.block-4-span {
-    color: #f9f9f9;
-    transition: all .5s ease-in-out;
-}
-
-.faq-answer {
-    display: none;
-    padding: 10px;
-    background-color: #eeecec;
-    color: #0d2d16;
-    border-radius: 8px;
-    border: 2px solid #0d2d16;
-    box-shadow: 4px 2px 5px #0000001c;
-}
-
-.faq-item input[type="checkbox"]:checked+.faq-question+.faq-answer {
-    display: block;
-} */
 .faq {
     display: flex;
     flex-direction: column;
