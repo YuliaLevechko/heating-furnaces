@@ -38,29 +38,38 @@ body {
 }
 .container {
     width: 100%;
-    padding: 10px  15px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 /* block-1  */
+.block-1-hero {
+    background: linear-gradient(rgb(255 255 255 / 85%), rgb(255 255 255 / 79%)), url(https://images.prom.ua/4791214081_opalyuvalna-pich-rud.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
 .block-1-title {
     color: #0d2d16;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
     line-height: 1.2;
-    margin: 0 auto;
-    width: 245px;
-}
-
-.block-1-info {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fede08;
 }
 
+.block-1-title:hover, .block-1-title:focus, .block-1-title:active {
+    color: #3ea55a;
+    border-bottom: 1px solid #3ea55a;
+}
 .block-1-text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+    width: 280px;
+    margin: 0 auto;
 }
 
 .block-1-subtitle {
@@ -68,13 +77,28 @@ body {
     font-size: 28px;
     line-height: 1.2;
 }
-
-.block-1-descr {
+.block-1-descr-top {
     font-size: 18px;
 }
+.block-1-descr {
+    font-size: 15px;
+}
 
+.block-1-btn {
+    background-color: #fede08;
+    padding: 15px;
+    color: #0d2d16;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+}
+.block-1-btn:hover, .block-1-btn:focus, .block-1-btn:active {
+    background-color: #0d2d16;
+    color: white;
+}
 .block-1-photo {
-    margin: 0 auto;
+    display: none;
 }
 
 @media screen and (min-width:320px) {
@@ -86,12 +110,19 @@ body {
 @media screen and (min-width:768px) {
     .container{
         width: 768px;
-        padding: 15px 32px;
+    }
+    .block-1-hero {
+        padding: 20px 32px;
+    }
+    .block-1-info {
+        flex-direction: row;
+    }
+    .block-1-photo {
+        display: block;
     }
 }
 @media screen and (min-width:1280px) {
     .container {
         width: 1280px;
-        padding: 20px 45px;
     }
 }
