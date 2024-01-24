@@ -253,7 +253,7 @@ body {
 .block-4-title {
     text-align: center;
 }
-.faq-list {
+/* .faq-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -299,7 +299,76 @@ body {
 
 .faq-item input[type="checkbox"]:checked+.faq-question+.faq-answer {
     display: block;
+} */
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+.faq__details[open] .faq__summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+.faq__summary {
+    color: #f9f9f9;
+    display: block;
+    padding: 10px 40px 10px 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: #0d2d16;
+    box-shadow: 4px 2px 5px #0000001c;
+    border-radius: 8px 8px 0 0;
+}
+
+.faq__summary::before {
+    top: 13px;
+    right: 15px;
+    color: transparent;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat 50% 50%;
+    width: 1em;
+    height: 1em;
+    content: "";
+    position: absolute;
+    transition: transform .5s;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.faq__summary:hover,
+.faq__summary:focus,
+.faq__summary:active {
+    color: #fede08;
+}
+
+.faq__summary:focus {
+    outline: 0;
+}
+
+.faq__details[open]>.faq__summary::before {
+    transform: scale(1, -1);
+}
+
+.faq__answer {
+    background-color: #eeecec;
+    border: 2px solid #0d2d16;
+    border-radius: 0 0 8px 8px;
+}
+
+.faq__text {
+    padding: 20px;
+    text-align: center;
+}
+.block-4-product-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
 
 @media screen and (min-width:320px) {
     .container {
