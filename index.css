@@ -294,6 +294,7 @@ body {
     color: #0d2d16;
     border-radius: 8px;
     border: 2px solid #0d2d16;
+    box-shadow: 4px 2px 5px #0000001c;
 }
 
 .faq-item input[type="checkbox"]:checked+.faq-question+.faq-answer {
