@@ -67,7 +67,7 @@ body {
 .block-1-text {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     width: 280px;
     margin: 0 auto;
 }
@@ -110,15 +110,34 @@ body {
 @media screen and (min-width:768px) {
     .container{
         width: 768px;
+        padding: 15px 32px;
     }
     .block-1-hero {
-        padding: 20px 32px;
+        background: none;
     }
     .block-1-info {
+        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+    }
+    .block-1-text {
+        margin: 0;
+        width: 100%;
+        gap: 30px;
+    }
+    .block-1-subtitle {
+        font-size: 32px;
+    }
+    .block-1-descr {
+        font-size: 16px;
+    }
+    .block-1-btn {
+        width: 260px;
+        font-size: 18px;
     }
     .block-1-photo {
         display: block;
+        width: 280px;
     }
 }
 @media screen and (min-width:1280px) {
